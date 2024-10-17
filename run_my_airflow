@@ -1,0 +1,7 @@
+cd /mnt/c/Users/esoro/work_space/vscode/my_airflow;
+source bin/activate;
+export AIRFLOW_HOME=/mnt/c/Users/esoro/work_space/vscode/my_airflow;
+echo AIRFLOW_HOME=$AIRFLOW_HOME;
+nohup airflow webserver -p 8080 &
+
+nohup airflow scheduler &
